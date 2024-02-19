@@ -7,7 +7,7 @@ import (
 
 func main() {
 	kentekens := []string{"GB-001-B", "HF-234-S", "HS-HIHI-HA", "test"}
-	var groet = bepaalgroet()
+	var groet = Bepaalgroet()
 	var kenteken string
 
 	fmt.Printf("%v! Welkom bij Fonteyn Vakantieparken\n", groet)
@@ -20,7 +20,7 @@ func main() {
 	}
 
 }
-func bepaalgroet() string {
+func Bepaalgroet() string {
 	hour := time.Now().Hour()
 	var groet string
 	if hour >= 7 && hour < 12 {
